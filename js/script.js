@@ -1,3 +1,6 @@
-var x = "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look"
-y= x.split()
-console.log(y)
+var arr = ["I ", "rezwan", "mitul"]
+document.write(arr[0])
+var arrr = [1,2,3,['mhr','you ','rezwan',{In_heartOf_Mohabbat:'Maria'}],'love ']
+document.write(arrr[4])
+document.write(arrr[3][1]);
+document.write(arrr[3][3].In_heartOf_Mohabbat)

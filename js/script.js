@@ -1,27 +1,21 @@
-let b = 8
-let a = b;
+//template literals (FS6)
+//Backtick `` 
 
-b = 45 
+
+a = `this is first line 
+this is second line
+testing this backtick`
 console.log(a)
-console.log("this is called primitive type")
+console.log("successfully line break")
 
-console.log("now lers see refrense type")
+let kame = "Mohabbat"
+let age = "22"
+let dob = "28 june, 1983"
 
-numbers = [12,4,5,3]
-newnumbers = numbers
-console.log(newnumbers)
+console.log(`My name is ${kame} I am ${age} years old My Date of birth is ${dob} `)
 
-numbers[2]=12
-console.log(numbers)
-console.log(newnumbers)
 
-numbers=[6,3,2,4]
-console.log(numbers)
-
-console.log(newnumbers)
-
-let u = {}
-console.log(u.name)
-
-var am = [1,3,{a:1}]
-console.log(am[2][a])
+let o = 34
+let b = 65
+console.log(`the result is ${o}+${b} = ${o+b}`)
+console.log("the result is "+(o+b))

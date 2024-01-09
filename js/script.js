@@ -1,21 +1,21 @@
-//template literals (FS6)
-//Backtick `` 
+var marks = prompt("Please Enter your marks: ")
+marks = parseInt(marks)
 
-
-a = `this is first line 
-this is second line
-testing this backtick`
-console.log(a)
-console.log("successfully line break")
-
-let kame = "Mohabbat"
-let age = "22"
-let dob = "28 june, 1983"
-
-console.log(`My name is ${kame} I am ${age} years old My Date of birth is ${dob} `)
-
-
-let o = 34
-let b = 65
-console.log(`the result is ${o}+${b} = ${o+b}`)
-console.log("the result is "+(o+b))
+if(marks>=90 && marks<=100){
+    console.log("Grade = A+")
+}
+else if(marks>=70 && marks<=89){
+    console.log("grade = A")
+}
+else if(marks >= 50 && marks<=69){
+    console.log("grade = A-")
+}
+else if(marks>=40 && marks<=49){
+    console.log("grade = B")
+}
+else if(marks>=0 && marks<=39){
+    console.log("grade = Fail")
+}
+else{
+    console.log("Invalid Marks! please enter a valid marks.")
+}

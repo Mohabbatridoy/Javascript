@@ -1,10 +1,6 @@
-strign = prompt("Please Enter the string: ")
-
-
-
-if (strign.length%2===0){
- console.log("the lenght of the string is even")
+var i = 1;
+while(i<=5){
+    console.log("this is "+i)
+    i++;
 }
-else{
-    console.log("the length of the string is odd")
-}
+console.log("this is out of the loop")

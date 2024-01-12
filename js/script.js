@@ -1,19 +1,26 @@
-//for in string/array/object
-//for of string/array
+let name = "Mohabbat Hossain Ridoy"
+let food = ['cake','apple','banana']
 
-let id = "this is md mohabbat hossain ridoy"
-let mm = ['hi','maria','kmn', 'acho'] 
-let m2 = {
-    name: 'maria',
-    id: 'Mohabbat',
-    for: 'mohabbat'
+let person = {
+    Name : "Mohabbat",
+    id : "213-15-4508",
+    age: 13
 }
 
-for(var j in id){
-    console.log(`index: ${j} item: ${id[j]}`)
+for (var i in name){
+    console.log(i)
+}
+
+for(var j of name){
     console.log(j)
 }
 
-for(var i of mm){
-    console.log(i);
+
+for (var k of food){
+    console.log(k)
+}
+
+for (var d in person){
+    console.log("Index: "+d)
+    console.log("value: "+person[d])
 }

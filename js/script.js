@@ -1,23 +1,19 @@
-var i = 1;
-var mul = 1;
+//for in string/array/object
+//for of string/array
 
-while(i<=10){
-    mul = mul*i;
-    i++;
-    console.log("print")
-}
-console.log("the mul is : "+mul)
-console.log("End of while loop")
-console.log("\n")
-console.log("start of for loop")
-// now lets start for loop: 
-
-var i;
-for(i=0; i<=10; i++){
-    console.log(i)
+let id = "this is md mohabbat hossain ridoy"
+let mm = ['hi','maria','kmn', 'acho'] 
+let m2 = {
+    name: 'maria',
+    id: 'Mohabbat',
+    for: 'mohabbat'
 }
 
-var j
-for (j=5; j>=1; j--){
+for(var j in id){
+    console.log(`index: ${j} item: ${id[j]}`)
     console.log(j)
+}
+
+for(var i of mm){
+    console.log(i);
 }

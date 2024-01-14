@@ -1,9 +1,20 @@
-////function
-
-//declaration of function
-function saysomthing(){
-    console.log("Hello")
-    console.log("I am learning Javascript")
+//normal declaration 
+function theFunction(name){
+    console.log(`this is ${name} declaration`)
 }
 
-saysomthing();
+// function expresion
+let theFunction1 = function(name){
+    console.log(`"this is function ${name}"`)
+}
+
+// Arrow function
+
+let theFunction2 = (name) => {
+    console.log(`"this is ${name} Function"`)
+}
+
+
+theFunction("Normal");
+theFunction1("Expresion");
+theFunction2("Arrow");

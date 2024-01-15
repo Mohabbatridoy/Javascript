@@ -1,54 +1,27 @@
-// array iteration usnig for each function 
-foods = ["cake", "chocolate","banana","Mango"]
-numebrs = [1,2,3,4,32]
+//math object
+/*var val ;
 
-/*let WholeArray =0;
-let theFunction = function(item,index,wholeArray) {
-    console.log(`In idex ${index} ${item} is a food`)
-    console.log(wholeArray);
-    return WholeArray = wholeArray;
+val = Math.PI;
+val = Math. E;
+val = Math. round(3.1)
+val = Math.ceil(1.1)
+val = Math.floor(1.9)
 
-}*/
-//foods.forEach(theFunction);
-
-
-
-let againFunction = (item) => {
-    return i =  `${item} is food`
-}
-
-//numebrs.forEach(theFunction)
-
-//let af = numebrs.map(againFunction)
-//console.log(af)
-
-//numebrs.map(theFunction)
+val = Math.sqrt(4)
+val = Math.abs(-5)
+val = Math.pow(2,3)
+val = Math.min(2,3,-5)
+val = Math.max(2,3,78)
+val = Math.random()
+val = Math.floor(Math.random()*100+1);
+console.log(val);*/
 
 
-let aFunction = numebrs.map(function(i){
-    return item = `${i} is a number`;
-})
+// date object
 
-console.log(aFunction)
+let val;
+let today = new Date();
 
+val = today.toString();
 
-let bFunction = foods.map(function(item){
-    return i = `${item } is a food`
-})
-
-console.log(bFunction)
-
-
-let cFunction = numebrs.map(function(i){
-    return i*i;
-
-})
-
-console.log(cFunction)
-
-
-let dFunction = (item) => {
-    return item*item;
-}
-
-numebrs.map(dFunction)
+console.log(val)

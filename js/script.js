@@ -16,12 +16,3 @@ val = Math.random()
 val = Math.floor(Math.random()*100+1);
 console.log(val);*/
 
-
-// date object
-
-let val;
-let today = new Date();
-
-val = today.toString();
-
-console.log(val)

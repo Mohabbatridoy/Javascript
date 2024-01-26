@@ -1,31 +1,25 @@
-//class (ES6)
+let val;
 
-class Person {
-    constructor(fName,mName,lName,dob){
-        this.firstName = fName;
-        this.MiddleName = mName;
-        this.lastName = lName;
-        this.dob = dob;
-    }
+//getting a element: 
+val = document.getElementById('document-id');
+val = document.getElementById('document-id').id;
+val = document.getElementById('document-id').className;
 
-    calculateAge(){
-        let birthDay = new Date(this.dob);
-        let diff = Date.now() - birthDay.getTime();
-        let ageDate = new Date(diff);
-        return Math.abs(ageDate.getUTCFullYear() - 1970);
-    }
+//changing style:
+document.getElementById('document-id').style.background='red';
+val = document.getElementById('document-id');
+val.style.color='white'
+val.style.padding = '10px'
+val.style.paddingLeft = '50px'
+console.log(val)
 
-    FullName(){
-        console.log(`Your Full Name: ${this.firstName} ${this.MiddleName}  ${this.lastName}`)
-    }
-}
-let a = prompt('Enter your firstName: ')
-let b = prompt("Enter your Middle Name: ")
-let c = prompt("Enter Your Last Name: ")
-let d = prompt("Enter Your Date of birthDay: ")
+//changing content: 
+val.innerText="this is heading"
+val.innerHTML= "<i><u>this is a list of programming languages</u></i>"
 
-let person1 = new Person(a,b,c,d);
-console.log(person1)
-person1.FullName();
-let age = person1.calculateAge();
-console.log(age);
+//document querySelector()
+val = document.querySelector('#document-id')
+val = document.querySelector('simple-class')
+val = document.querySelector('li:nth-child(1')
+
+console.log(val)

@@ -1,38 +1,31 @@
-//dom
-//getElementsByClassName;
+//travesing the DOM:
 
-let list = document.getElementsByClassName('sample-class');
-console.log(list[0])
+ let val;
+ let list = document.querySelector('ul')
+ let listItem = document.querySelector('ul li:last-child')
 
-list[0].style.background = 'red'
+ val = listItem
+ val = list;
 
-///getElementsByTagName:
-list = document.getElementsByTagName('li')
-list = document.querySelector('ol').getElementsByTagName('li')
-// let liArray = Array.from(list)
-// liArray.forEach((item)=>{
-//     item.style.background = 'gray'
-// })
-// console.log(list)
+ val = list.childNodes;
+ val = list.childNodes[0]
+ val = list.childNodes[1]
+ val = list.childNodes[1].nodeName;
+ val = list.childNodes[1].nodeType;
 
-///query selector():
+ val = list.children;
+ val = list.children[1];
+ val = list.children[1].children[0]
+ val = list.children[1].textContent= 'HI'
 
-list = document.querySelectorAll('ol li')
-console.log(list)
+val = list.firstChild;
+val = list.firstElementChild;
+val = list.lastElementChild;
+val = list.childElementCount;
 
-list.forEach((item)=>{
-    item.style.color = 'red';
-})
-
-list = document.querySelectorAll('li:nth-child(odd)')
-list.forEach((item)=>{
-    item.style.background = 'gray';
-    item.style.color = 'red'
-})
-
-list = document.querySelectorAll('li:nth-child(even)')
-list.forEach(function(item){
-    item.style.background = 'red';
-    item.style.color = 'gray';
-    // item.innerText = 'this is example'
-})
+val = listItem
+val = listItem.parentElement;
+val = listItem.parentElement.parentElement;
+val = listItem.previousElementSibling;
+val = listItem.nextElementSibling
+ console.log(val)

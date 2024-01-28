@@ -1,38 +1,28 @@
-////Adding Element to Dom:
-// Create Element ; 
+//Remove element from the dom: 
 
-//add class and ID:
-let olItem = document.createElement('li')
-olItem.className = 'addOlItem';
-olItem.id = 'addInOl_list';
+let listItem = document.querySelectorAll('li')
 
-
-//add attribute
-olItem.setAttribute('title','A title to new elemet')
-olItem.appendChild(document.createTextNode('Javascript'))
-document.querySelector('ol').appendChild(olItem)
-
-// console.log(olItem)
+listItem[0].remove();
+listItem[6].remove();
 
 
-//now addding in unorder list: 
 
-/// creating element
-let ulItem = document.createElement('li')
-let link = document.createElement('a')
-// console.log(link)
-console.log(ulItem)
-//adding class and id
-ulItem.className= 'a new class name'
-ulItem.id = 'a new id';
+let list = document.querySelector('ul')
 
-//adding attribute
-ulItem.setAttribute('title','this is a insta link')
-link.setAttribute('href','www.instagram.com')
-ulItem.appendChild(link)
+// list.className = 'test'
 
-link.appendChild(document.createTextNode('Instagram'))
+//add class in dom
+list.classList.add('test')
+list.classList.add('list_added')
 
-//printing ulitem
-console.log(ulItem)
+//remove class from dom
+list.classList.remove('test')
 
+//checking attribute in dom:
+let val = list.hasAttribute('class')
+list.setAttribute('title','new title added');
+list.removeAttribute('title')
+
+console.log(val)
+console.log(listItem)
+console.log(list)

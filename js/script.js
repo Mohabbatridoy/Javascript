@@ -1,31 +1,38 @@
-//travesing the DOM:
+////Adding Element to Dom:
+// Create Element ; 
 
- let val;
- let list = document.querySelector('ul')
- let listItem = document.querySelector('ul li:last-child')
+//add class and ID:
+let olItem = document.createElement('li')
+olItem.className = 'addOlItem';
+olItem.id = 'addInOl_list';
 
- val = listItem
- val = list;
 
- val = list.childNodes;
- val = list.childNodes[0]
- val = list.childNodes[1]
- val = list.childNodes[1].nodeName;
- val = list.childNodes[1].nodeType;
+//add attribute
+olItem.setAttribute('title','A title to new elemet')
+olItem.appendChild(document.createTextNode('Javascript'))
+document.querySelector('ol').appendChild(olItem)
 
- val = list.children;
- val = list.children[1];
- val = list.children[1].children[0]
- val = list.children[1].textContent= 'HI'
+// console.log(olItem)
 
-val = list.firstChild;
-val = list.firstElementChild;
-val = list.lastElementChild;
-val = list.childElementCount;
 
-val = listItem
-val = listItem.parentElement;
-val = listItem.parentElement.parentElement;
-val = listItem.previousElementSibling;
-val = listItem.nextElementSibling
- console.log(val)
+//now addding in unorder list: 
+
+/// creating element
+let ulItem = document.createElement('li')
+let link = document.createElement('a')
+// console.log(link)
+console.log(ulItem)
+//adding class and id
+ulItem.className= 'a new class name'
+ulItem.id = 'a new id';
+
+//adding attribute
+ulItem.setAttribute('title','this is a insta link')
+link.setAttribute('href','www.instagram.com')
+ulItem.appendChild(link)
+
+link.appendChild(document.createTextNode('Instagram'))
+
+//printing ulitem
+console.log(ulItem)
+

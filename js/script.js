@@ -1,28 +1,14 @@
-//Remove element from the dom: 
+//events of Javascript: 
+//Html page theke js er code run kora
 
-let listItem = document.querySelectorAll('li')
+//event listener: 
+let btn = document.getElementById('sample-button');
+// btn.addEventListener('mouseover',message)
 
-listItem[0].remove();
-listItem[6].remove();
+function message(){
+    alert("Button clicked");
+}
 
-
-
-let list = document.querySelector('ul')
-
-// list.className = 'test'
-
-//add class in dom
-list.classList.add('test')
-list.classList.add('list_added')
-
-//remove class from dom
-list.classList.remove('test')
-
-//checking attribute in dom:
-let val = list.hasAttribute('class')
-list.setAttribute('title','new title added');
-list.removeAttribute('title')
-
-console.log(val)
-console.log(listItem)
-console.log(list)
+function Print_hudai(){
+    console.log("cheacking is it working or not")
+}

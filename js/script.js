@@ -1,14 +1,14 @@
-//events of Javascript: 
-//Html page theke js er code run kora
+// document.querySelector('#smple-id').addEventListener('focus',test)
+// document.querySelector('#smple-id').addEventListener('keyup',test2)
 
-//event listener: 
-let btn = document.getElementById('sample-button');
-// btn.addEventListener('mouseover',message)
 
-function message(){
-    alert("Button clicked");
-}
+// function test(e){
+//     this.style.background = 'pink'
+// }
 
-function Print_hudai(){
-    console.log("cheacking is it working or not")
-}
+// function test2(){
+//     document.getElementById('demo').innerText = this.value;
+//     console.log()
+// }
+
+document.getElementsByTagName('p')[1].innerHTML = "bohubrihi"
